@@ -12,13 +12,13 @@
  {
    "dev": 
    {
-     "repo" : "github.com/repo" 
+     "repo" : "github.com/repo",
      "branch" : "origin/dev",
      "jdk_version" : "1.8",
      "build_tool": "maven",
      "code_analysis" : "sonarqube",
      "test_report" : "html",
-     //prepare host by installing required packages
+     #prepare host by installing required packages
      "pre-setup" : "yum install xyz;",
      //This will be executed on the host after cloning the repository
      //eg: placing config files in nfs path
