@@ -1,9 +1,10 @@
-pipeline {
-   	 agent any
- 	 libraries {
+
+ libraries {
   	 lib('jenkins-pipeline-library@master')
   }
-stage('Demo') {
+pipeline {
+    agent any
+    stage('Demo') {
     echo 'Hello world'
     runPipeline
 }
