@@ -18,14 +18,9 @@
      "build_tool": "maven",
      "code_analysis" : "sonarqube",
      "test_report" : "html",
-     #prepare host by installing required packages
      "pre-setup" : "yum install xyz;",
-     //This will be executed on the host after cloning the repository
-     //eg: placing config files in nfs path
      "post-setup" : "create symlink ln -s /file /etc",
-     //task to be executed after the deployment
      "post-deploy" : "script.sh",
-    //post deployment health check
      "post-deploy-check" : "url/healthz"
     },
   "staging" : 
@@ -36,14 +31,9 @@
      "build_tool" : "maven",
      "code_analysis" : "sonarqube",
      "test_report" : "html",
-     //prepare host by installing required packages
      "pre-setup" : "yum install xyz; yum install abc",
-     //This will be executed on the host after cloning the repository
-     //eg: placing config files in nfs path
      "post-setup" : "create symlink ln -s /file /etc",
-     //task to be executed after the deployment
      "post-deploy" : "script.sh",
-     //post eployment health check
      "post-deploy-check" : "url/healthz"
   },
  },
