@@ -4,3 +4,4 @@ pipeline {
   	 lib('jenkins-pipeline-library@master')
   }
 runPipeline()
+}
