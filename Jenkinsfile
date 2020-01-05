@@ -1,3 +1,3 @@
-@Library('jenkins-shared-library')_
+@Library('jenkins-shared-library@master')_
 echo 'Hello world'
 runPipeline
