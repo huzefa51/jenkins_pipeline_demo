@@ -3,5 +3,8 @@ pipeline {
  	 libraries {
   	 lib('jenkins-pipeline-library@master')
   }
-runPipeline()
+stage('Demo') {
+    echo 'Hello world'
+    runPipeline
+}
 }
